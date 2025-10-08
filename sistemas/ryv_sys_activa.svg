@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="0 0 1200 600"
+     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RYV Sistemas - Membrana Activa (bicapa)">
+  <defs>
+    <clipPath id="round"><rect x="0" y="0" width="1200" height="600" rx="16" ry="16"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1116"/><stop offset="1" stop-color="#1b2433"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.08"/>
+    </pattern>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C62F36"/><stop offset="1" stop-color="#E24E55"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="1200" height="600" fill="url(#bg)"/>
+    <rect x="0" y="0" width="560" height="260" fill="url(#dots)"/>
+    <g opacity="0.10" stroke="#ffffff" stroke-width="1">
+      <line x1="-80" y1="140" x2="340" y2="-80"/>
+      <line x1="-40" y1="180" x2="380" y2="-40"/>
+      <line x1="0" y1="220" x2="420" y2="0"/>
+      <line x1="40" y1="260" x2="460" y2="40"/>
+    </g>
+
+  <defs>
+    <linearGradient id="accentAct" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ef4444"/><stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="0.78" cy="0.18" r="0.3">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+    <!-- Membrane layers (brand copper always present) -->
+    <path d="M0 450 C 220 410, 420 520, 700 500 C 880 490, 1040 520, 1200 510 L 1200 600 L 0 600 Z"
+          fill="url(#copper)" opacity="0.75"/>
+    <path d="M0 520 C 260 500, 520 590, 820 580 C 980 575, 1120 590, 1200 585 L 1200 600 L 0 600 Z"
+          fill="#ffffff" opacity="0.06"/>
+    
+    <path d="M0 470 C 260 430, 420 560, 760 540 C 940 530, 1080 550, 1200 540 L 1200 600 L 0 600 Z"
+          fill="url(#accentAct)" opacity="0.8"/>
+    <path d="M0 490 C 240 450, 420 570, 760 555 C 980 548, 1080 562, 1200 555 L 1200 600 L 0 600 Z"
+          fill="#ffffff" opacity="0.18"/>
+    <rect x="0" y="0" width="1200" height="600" fill="url(#spark)"/>
+    <!-- shield icon -->
+    <g transform="translate(1000,70)" opacity="0.9">
+      <path d="M0 20 L60 0 L120 20 L120 88 C120 120 88 148 60 160 C32 148 0 120 0 88 Z"
+            fill="#ffffff" opacity="0.16" stroke="#ffffff" stroke-opacity="0.45" stroke-width="2"/>
+      <path d="M60 40 L90 60 L60 98 L30 60 Z" fill="#ffffff" opacity="0.22"/>
+    </g>
+
+    <rect x="0" y="0" width="1200" height="140" fill="url(#glow)"/>
+  </g>
+</svg>

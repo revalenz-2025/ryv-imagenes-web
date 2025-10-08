@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="0 0 1200 600"
+     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RYV Sistemas - Cubiertas Lite (liviano)">
+  <defs>
+    <clipPath id="round"><rect x="0" y="0" width="1200" height="600" rx="16" ry="16"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1116"/><stop offset="1" stop-color="#1b2433"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.08"/>
+    </pattern>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C62F36"/><stop offset="1" stop-color="#E24E55"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="1200" height="600" fill="url(#bg)"/>
+    <rect x="0" y="0" width="560" height="260" fill="url(#dots)"/>
+    <g opacity="0.10" stroke="#ffffff" stroke-width="1">
+      <line x1="-80" y1="140" x2="340" y2="-80"/>
+      <line x1="-40" y1="180" x2="380" y2="-40"/>
+      <line x1="0" y1="220" x2="420" y2="0"/>
+      <line x1="40" y1="260" x2="460" y2="40"/>
+    </g>
+
+  <defs>
+    <linearGradient id="accentCl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+    <!-- Membrane layers (brand copper always present) -->
+    <path d="M0 450 C 220 410, 420 520, 700 500 C 880 490, 1040 520, 1200 510 L 1200 600 L 0 600 Z"
+          fill="url(#copper)" opacity="0.75"/>
+    <path d="M0 520 C 260 500, 520 590, 820 580 C 980 575, 1120 590, 1200 585 L 1200 600 L 0 600 Z"
+          fill="#ffffff" opacity="0.06"/>
+    
+    <path d="M0 470 C 260 430, 420 560, 760 540 C 940 530, 1080 550, 1200 540 L 1200 600 L 0 600 Z"
+          fill="url(#accentCl)" opacity="0.72"/>
+    <!-- lightweight roof glyph -->
+    <g transform="translate(940,80)" opacity="0.9">
+      <polygon points="0,60 100,10 200,60 100,110" fill="#ffffff" opacity="0.16" stroke="#ffffff" stroke-opacity="0.5" stroke-width="2"/>
+      <rect x="30" y="60" width="140" height="50" fill="#ffffff" opacity="0.10"/>
+      <line x1="0" y1="60" x2="200" y2="60" stroke="#ffffff" stroke-opacity="0.5" stroke-width="3"/>
+    </g>
+    <!-- light rays -->
+    <g opacity="0.18" stroke="#22d3ee">
+      <line x1="980" y1="24" x2="1120" y2="120" stroke-width="2"/>
+      <line x1="930" y1="40" x2="1090" y2="140" stroke-width="1.5"/>
+      <line x1="1080" y1="10" x2="1180" y2="100" stroke-width="1.5"/>
+    </g>
+
+    <rect x="0" y="0" width="1200" height="140" fill="url(#glow)"/>
+  </g>
+</svg>
